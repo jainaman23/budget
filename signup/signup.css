@@ -1,0 +1,35 @@
+body{
+	margin: 0px;
+    padding: 0px;
+    background-image: url("./images/budget_signup.jpg");
+    background-position-x: -145px;
+}
+
+#signup{  
+    width: 320px;
+    height: 370px;
+    background: black;
+    opacity: 0.7;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    padding-top: 4px;
+    color: white;
+    border-radius: 50px;
+}
+
+.budget , .sign_up {
+	    text-align: center;
+}
+
+.int_submit{
+	margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.submit{
+	    width: 200px;
+    height: 29px;
+
+}
