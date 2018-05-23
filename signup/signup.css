@@ -2,7 +2,7 @@ body
 {
 	  margin: 0px;
     padding: 0px;
-    background-image: url("./images/budget_signup.jpg");
+    background-image: url("../images/budget_background.jpg");
 		background-position-x: -145px;
 }
 
@@ -10,10 +10,10 @@ body
 #signup
 {
     width: 320px;
-    height: 450px;
-    background-color:RGB(0,0,0,0.5);
+    height: 470px;
+    background-color:RGB(0,0,0,0.7);
     margin: auto;
-    margin-top: 65px;
+    margin-top: 40px;
     padding: 20px;
     padding-top: 4px;
     color: white;
@@ -46,12 +46,12 @@ body
 
 .sign_up
 {
-    text-align: center;
+	  text-align: center;
     text-indent: -34px;
     font-family: cursive;
     margin: 0px;
     padding: 5px;
-}
+	}
 
 .sign_up_txt
 {
@@ -79,9 +79,10 @@ body
     margin-top: -2px;
 }
 
-form
+.form_signup_fields
 {
 	  margin-left:10px;
+		margin-bottom: -9px;
 }
 
 .int_submit
@@ -181,4 +182,13 @@ input , .address_txt
 {
    width: 190px;
 	 margin-left:68px;
+}
+
+.signup_log{
+	text-align: center;
+}
+
+.log_login_link{
+	color: #ff0000;
+  font-weight: bold;
 }

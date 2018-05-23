@@ -3,8 +3,8 @@
 <div id="signup">
 		<div class="budget"><h1 class="budget_txt">BUDGET</h1></div>
 		<div class="sign_up"><h2  class="sign_up_txt">SIGN</h2></div>
-		<div class="form">
-			<form action="signup.php" method="POST" enctype="multipart/form-data">
+		<div class="form_sinup">
+			<form class="form_signup_fields" action="signup.php" method="POST" enctype="multipart/form-data">
 				<div class="int_title"><span class="title">Title:</span><select class="title_selc" name="title">
 					<option value="Mr.">Mr.</option>
 					<option value="Mrs.">Mrs.</option>
@@ -23,12 +23,15 @@
 			<div class="int_submit"><input class="submit" type="submit" name="submit" value="Signup"></div>
 		</form>
 	</div>
+	<div class="signup_log">
+		  <span class="reg_user">Registered User</span> <a class="log_login_link" href="../login/login.php">Login</a>
+	</div>
 </div>
 
 <!--PHP CODE-->
 <?php
 
-error_reporting(0); //REMOVING ALL ERROR ON RUNTIME
+//error_reporting(0); //REMOVING ALL ERROR ON RUNTIME
 
 //CREATE DATABASE AND TABLE.
 	$upload  = require_once("./database_table.php");
@@ -51,6 +54,7 @@ error_reporting(0); //REMOVING ALL ERROR ON RUNTIME
 					$email_search = "SELECT * FROM `user_profile` WHERE `Email_id` = '{$_POST['emailid']}'";
 					$email_count = $db->query($email_search);
 					$count = $email_count->num_rows;
+				//	$email_count->free();
 					$db->close();
 		 if($count==0)
 		    {
@@ -70,9 +74,14 @@ error_reporting(0); //REMOVING ALL ERROR ON RUNTIME
 			$username_search = "SELECT * FROM `user_profile` WHERE `Username` = '{$_POST["username"]}'";
 			$username_count = $db->query($username_search);
 			$count = $username_count->num_rows;
+			//$username_count->free();
 			$db->close();
 		if($count==0)
 			{
+
+	//PASSWORD
+		  $_POST["password"] = md5($_POST["password"]);
+			var_dump($_POST["password"]);
 
 
   // PHOTO UPLOAD
@@ -93,6 +102,7 @@ error_reporting(0); //REMOVING ALL ERROR ON RUNTIME
 		`Photo` = '{$photo_source}'";
 	$check = $db->query($value);
 	var_dump($check);
+	//$check->free();
 	$db->close();
 
 	}

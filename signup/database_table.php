@@ -7,6 +7,7 @@
 		{
 			$database = "CREATE DATABASE `budget`";
 			$dat = $db->query($database);
+			//$dat->free();
 	$db->close();
  		}
 		else
@@ -27,10 +28,11 @@
 		Contact_No BIGINT(10) ,
 		Address VARCHAR(200),
 		Username VARCHAR(60) ,
-		Password VARCHAR(20) ,
+		Password VARCHAR(32) ,
 		Photo VARCHAR(200)
 	)";
 	$tab = $db->query($table);
+	//$tab->free();
 	$db->close();
-	
+
 	?>
