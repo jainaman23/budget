@@ -1,0 +1,135 @@
+body
+{
+	  margin: 0px;
+    padding: 0px;
+    background-image: url("../images/budget_background.jpg");
+		background-position-x: -145px;
+}
+
+#login_frame{
+    width: 358px;
+    height: 225px;
+    background-color: RGB(0,0,0,0.7);
+    margin: auto;
+    margin-top: 164px;
+    padding: 20px;
+    padding-top: 4px;
+    color: white;
+    border-radius: 50px;
+}
+
+.log_budget_txt{
+  	text-align: center;
+  	margin: 0px;
+  	padding: 2px;
+  	font-family: cursive;
+}
+
+.log_budget_txt:after
+{
+    position: absolute;
+    content: "BUDGET";
+    color: red;
+    font-family: cursive;
+    font-size: 1.0em;
+    margin-top: -1px;
+    margin-left: -132px;
+}
+
+.log_login_txt
+{
+	  text-align: center;
+    text-indent: -34px;
+    font-family: cursive;
+		margin: 0px;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.log_login_txt:before
+{
+    position: absolute;
+    content: " ";
+    color: red;
+    border-bottom: 2px solid red;
+    width: 85px;
+    margin-top: 30px;
+}
+
+	.log_login_txt:after
+{
+	    position: absolute;
+	    content: "IN";
+	    color: red;
+	    margin-left: 35px;
+	    font-family: cursive;
+	    font-size: 1.0em;
+}
+
+.form_login_fields
+{
+	  margin-left:10px;
+		margin-bottom: -9px;
+}
+
+.log_int_submit
+{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.log_submit_clk
+{
+    width: 192px;
+    height: 29px;
+    text-align: center;
+    border-radius: 9px;
+    box-shadow: 0px 1px 5px 0px;
+    font-size: 20px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid black;
+    padding-bottom: 30px;
+}
+
+input
+{
+    margin: 3px;
+    border-radius: 5px;
+    border: 2px inset #353e44;
+    color: white;
+    background-color: RGB(182,58,60,0.5);
+    box-shadow: 0px 1px 5px 0px;
+	  height: 25px
+
+}
+
+.log_int_emailid{
+	text-align: center;
+	margin-left: -30p
+}
+
+.log_emailid_txt{
+		width: 200px;
+}
+
+.log_int_password{
+	text-align: center;
+	margin-left: -5px;
+}
+
+.log_password_txt{
+		width: 200px;
+}
+
+.log_signup{
+	text-align: center;
+	padding: 2px;
+}
+
+.log_signup_link{
+	color: #ff0000;
+  font-weight: bold;
+}
